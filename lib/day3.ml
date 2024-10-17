@@ -34,7 +34,8 @@ let solution_a =
   List.map dups ~f:get_letter_score |> List.fold_left ~init:0 ~f:( + )
 ;;
 
-let file_contents_b =
+(*
+   let file_contents_b =
   let lines = In_channel.read_all "inputs/input3.txt" |> String.split_lines in
   let grouped = List.groupi ~break:(fun i _ _ -> i mod 3 = 0) lines in
   let intersections =
@@ -51,5 +52,6 @@ let file_contents_b =
   in
   List.map dups ~f:(fun (x :: _) -> get_letter_score x)
 ;;
+*)
 
-let solution_b = List.fold_left ~init:0 ~f:( + ) file_contents_b
+(* let solution_b = List.fold_left ~init:0 ~f:( + ) file_contents_b *)
